@@ -1,7 +1,7 @@
 numpy
-Flask~=2.2.2
+Flask
 gunicorn
 sklearn
 pandas
--e .
+
 

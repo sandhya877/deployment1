@@ -1,16 +1,16 @@
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
 from typing import List
 
 PROJECT_NAME="housing-prediction"
 VERSION="0.0.3"
 AUTHOR="SANDHYA"
 DESCRIPTION="THIS IS MY FIRST PROJECT"
+REQUIREMENTS_FILE_NAME = "requirements.txt"
 
-REQUIREMENTS_FILE_NAME="Requirements.txt"
 
-def get_requirements_list()->List[str]:
+def get_requirements_list() -> List[str]:
     with open(REQUIREMENTS_FILE_NAME) as file:
-        file.readlines()
+        return file.readlines()
 
 
 setup(
