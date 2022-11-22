@@ -1,14 +1,11 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 from typing import List
 
-
-
-
 PROJECT_NAME="housing-prediction"
-VERSION="0.0.1"
+VERSION="0.0.3"
 AUTHOR="SANDHYA"
 DESCRIPTION="THIS IS MY FIRST PROJECT"
-PACKAGES=["housing"]
+
 REQUIREMENTS_FILE_NAME="Requirements.txt"
 
 def get_requirements_list()->List[str]:
@@ -21,6 +18,6 @@ setup(
     version=VERSION,
     author=AUTHOR,
     description=DESCRIPTION,
-    packages=PACKAGES,
+    packages=find_packages(),
     install_requires=get_requirements_list()
 )
